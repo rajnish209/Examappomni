@@ -1,0 +1,70 @@
+<template>
+
+   <lightning-card title="">
+       <div class="slds-var-m-around_medium">
+        <!-- <template if:true={set}> -->
+           <template if:true={visibleContacts}>
+              <template for:each={visibleContacts} for:item="contact">
+               
+                <p key={contact.Id} class="lightning">&nbsp; &nbsp;&nbsp;{contact.Question__c}</p>
+
+                     <!-- For multiple type Question  -->
+                    
+                            <template if:true={multiple}>
+                           
+                           <template for:each={contact.Option_Details__r} for:item="option">
+                               <p key={option.Id} class="optionsize" >&nbsp; &nbsp;&nbsp;&nbsp;{option.MultiOption__c}</p>  
+                            </template>  
+                            
+                            <lightning-radio-group 
+                            key={contact.Id}
+                                name="radioButtonGroup" 
+                                onchange={handleChange} 
+                                options={options}
+                                value={answeroption}
+                                type="radio"
+                                class="radiotext"
+                              ></lightning-radio-group>
+                                
+
+
+                            </template>
+                            
+                            <!-- for single type option -->
+                            
+                            <template if:true={single}>
+                               
+                                <lightning-radio-group 
+                                key={contact.Id}
+                                    name="radioButtonGroup" 
+                                    onchange={handleChange} 
+                                    options={options}
+                                    value={answeroption}
+                                    type="radio"
+                                    class="radiotext"
+                                  
+                                  ></lightning-radio-group>
+                                    
+                                </template>
+                              </template>
+                              
+              </template>
+           
+           <br/>
+           <br/>
+           <br/>
+           <br/>
+           <div slot="footer" class="slds-var-m-horizontal_medium">
+               <c-child-pagination records={totalContacts} onupdate={updateContactHandler} trackeachvalue={trackeachvalue} ></c-child-pagination>
+            
+           </div>
+           <!-- <div><h1>Your selected value is :{answers}</h1></div> -->
+       </div>
+   </lightning-card>
+   <!-- <div class="newpage">
+    <lightning-button variant="destructive" label="Submit" title="Destructive action" onclick={handleClickresult} class="slds-m-left_x-small"></lightning-button>
+   </div> -->
+    <Button  title="Primary action" onclick={handleClickresult} class="newpage" >Submit</Button> 
+
+</template>
+

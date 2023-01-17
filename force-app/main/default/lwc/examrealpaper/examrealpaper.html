@@ -1,0 +1,32 @@
+<template>
+    <div class ="header">
+        <!-- <h1 class="headername">Omni Cloud</h1> -->
+        <!-- <div class="watch">
+        <c-stop-watch></c-stop-watch>
+        </div> -->
+        <img class='logo' src={logo} alt="image"/>
+    </div>
+    <div class="main">
+        <div class="left">
+            <h1 class="inst">Instructions</h1>
+            <div class="point">
+                <ul class="slds-list_dotted">
+            <li class="point1">You are required to comply with the directions given by the head invigilator at the examination.</li>
+            <li class="point1">Papers and computer/laptop are to be covered when you leave your place.</li>
+            <li class="point1">Malpractice is strictly not encouraged.</li>
+           
+                <li>There will be NO NEGATIVE MARKING for the wrong answers.</li>
+                <li>Extra Exam Attempt Will not be provided if the candidate does not submit the exam properly.</li>
+                <li>Make sure that your ID is correctly entered on the questionnaire page. </li>
+              </ul>  
+              
+            </div>
+        </div>
+        <div class="right">
+            <!-- <template if:true={showStartBtn}> -->
+                <!-- <lightning-button label="Start Exam" onclick={handleClick} style="margin-left: 145px;background-color :red"></lightning-button> -->
+                <lightning-button variant="brand" label="StartExam" title="Primary action" onclick={handleClick} class="slds-m-left_x-small" style="margin-left: 145px;"></lightning-button>
+            <!-- </template> -->
+    </div>
+    </div>
+</template>

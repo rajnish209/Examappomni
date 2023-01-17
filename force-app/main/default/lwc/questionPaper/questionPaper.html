@@ -1,0 +1,74 @@
+<template>
+    <div class ="header">
+       
+        <img class='logo' src={logo} alt="image"/>
+        <div class="headername">
+            <template for:each={Fullname} for:item="item">
+                <div key={item.Id} class="main">Welcome {item.Name}</div>
+            </template>
+        
+        </div>
+        <div class="timer">
+        <template if:true={forhideboxes}>
+            <div style="font-size: 20px;text-align:center;">{timeVal}</div>
+        </template>
+    </div>
+    </div>
+<template if:false={forhideboxes}>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Employee Id" placeholder="Employee Id" class="inputfield" onchange={handleEmployee} required></lightning-input>
+    </div>
+     <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Set" placeholder="Setno" class="inputfield" onchange={handleSet} required></lightning-input>
+    </div> 
+   
+
+
+
+
+    <!-- <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Topic" placeholder="Topic" class="inputfield" onchange={handleTopic} required></lightning-input>
+    </div> -->
+    <!-- <lightning-combobox
+    name="progress"
+    label="Topic"
+    class="checkbox"
+    value={value}
+    placeholder="None"
+    options={options}
+    onchange={handleTopic} ></lightning-combobox> -->
+
+    <!-- <lightning-combobox
+    name="progress"
+    label="Set"
+    class="checkbox"
+    value={values}
+    placeholder="None"
+    options={optionss}
+    onchange={handleSet}></lightning-combobox> -->
+
+    <lightning-button variant="brand" label="Submit Id" title="Primary action" class="inputbutton" onclick={handleSubmit}  ></lightning-button>
+</template>
+<br/>
+<br/>
+<br/>
+<br/>
+    <template  if:true={isComponentOpen}>
+        <c-pagination employeeid={employeeid} countstore={countstore} setno={setno}></c-pagination> 
+    </template>
+    
+    <!-- <template for:each={Fullname} for:item="acc">
+        <tr key={acc.Id}>
+            <th>
+            <div>{acc.Name}</div></th>
+          
+        </tr>
+    </template> -->
+
+    
+
+
+    <!-- <Button  title="Primary action" onclick={handleClickresult} class="newpage" >Submit</Button>
+         -->
+    
+</template>

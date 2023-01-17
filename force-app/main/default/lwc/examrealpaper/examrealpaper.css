@@ -1,0 +1,49 @@
+.header{
+    width:100%;
+    height: 90px;
+    background-color: rgb(57, 199, 189);
+}
+.headername{
+    
+    font-size: 385%;
+    
+    color:black;
+    font-weight: bold;
+}
+.main{
+    display: flex;
+}
+.left{
+    margin-left: 100px;
+
+    width:700px;
+    height: 400px;
+}
+.right{
+    margin-left: 100px;
+   color: brown;
+   
+    margin-top: 180px;
+
+}
+.inst{
+    color:brown;
+    margin-left: 20%;
+    font-size: 60px;
+}
+.point{
+    color:black;
+    margin-left: 20%;
+    font-size: 15px;
+}
+.point{
+    color:black;
+    margin-left: 20%;
+    font-size: 15px;
+}
+.logo{
+    margin-left: 10px;
+
+    width: 170px;
+    height: 90px;
+}

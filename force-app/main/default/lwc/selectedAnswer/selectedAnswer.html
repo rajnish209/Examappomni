@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-var-m-around_medium">
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Employee Id" placeholder="Employee Id" class="inputfield" onchange={handleEmployee} required></lightning-input>
+    </div>
+     <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="Set" placeholder="Setno" class="inputfield" onchange={handleSet} required></lightning-input>
+    </div>
+    <lightning-button variant="brand" label="Submit Id" title="Primary action" class="inputbutton" onclick={handleSubmit}  ></lightning-button>
+   <!-- <template if:true={val}> -->
+    <template if:true={visibleContacts}>
+    <!-- <template for:each={visibleContacts} for:item="con"> -->
+        <lightning-datatable data={visibleContacts} columns={columns}  key-field="Id">
+        </lightning-datatable>
+        <!-- <h1 key={con.Id}>{con.Question}</h1>
+        <h1 key={con.Id}>{con.option}</h1> -->
+    </template>
+    <!-- </template> -->
+    <!-- </template> -->
+    <div slot="footer" class="slds-var-m-horizontal_medium">
+        <c-child-paginationfor-answer records={totaltask} onupdate={updateContactHandler} ></c-child-paginationfor-answer>
+     
+    </div>
+    </div>
+</template>

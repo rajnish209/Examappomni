@@ -1,0 +1,42 @@
+<template>
+    
+    <!-- <lightning-card title="Registration" icon-name="custom:custom21"> -->
+    <div class="main">
+    <div class="main1">
+        <img class='logo' src={logo} alt="image"/> 
+        <div class="maininside">
+    <form>
+        <div class="maindiv">
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" class="input1" label="First Name" placeholder="First Name" onchange={handleName} required></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" class="input1" label="Last Name" placeholder="Last Name" onchange={handleLastName} required></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text"  class="input1" label="Email" placeholder="Email" onchange={handleEmail} required></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <div class="enterpass">
+        <label class="labelfield">Password</label>
+        <br/>
+
+        <lightning-input type="text" class="input2"   placeholder="Password" onchange={handlePassword} required></lightning-input>
+    </div>
+    </div>
+    </div>
+   <span>{errormsg}</span>
+   <div class="buttonq">
+    <lightning-button variant="brand" label="Submit"  title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+   
+</div>  
+</form>
+</div>
+    </div>
+    <div class="main2">
+        <h1 class="heading">Expect the best, Preparing for the worst, Capitalize on what comes.</h1>
+        <img class="Loginimage" src={Loginlogo} alt="image"/>
+    </div>
+    </div>
+<!-- </lightning-card> -->
+</template>

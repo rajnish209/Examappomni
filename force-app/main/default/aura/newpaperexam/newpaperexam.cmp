@@ -1,0 +1,5 @@
+<aura:component implements="lightning:isUrlAddressable">
+
+ <c:examrealpaper></c:examrealpaper>
+ 
+</aura:component>

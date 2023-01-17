@@ -1,0 +1,63 @@
+
+.main{
+    display: flex;
+}
+.main1{
+    width: 50%;
+    height: 600px;
+    border: 1px solid white;
+    margin-left: 20px;
+
+}
+.main2{
+    width: 47%;
+    height: 600px;
+    border: 1px solid white;  
+}
+.input1{
+    width: 250px;
+    margin-left: 25%;
+    margin-top: -28px;
+   
+}
+.input2{
+    width: 250px;
+    margin-left: 25%;
+    margin-top: -23px;
+    -webkit-text-security: circle;
+}
+.maininside{
+    margin-top:-40px;
+}
+.buttonq{
+    margin-left: 25%;
+}
+.logo{
+    width: 250px;
+margin-top: 60px;
+    margin-left: 25%;
+}
+.labelfield{
+    margin-left: 26%;
+    font-weight: low;
+   margin-top: -4px;
+   color: grey;
+}
+.heading{
+    color:rgb(3, 3, 70);
+    margin-left: 5%;
+    margin-top: 70px;
+    font-size: 30px;
+}
+.Loginimage{
+    margin-left: 7%;
+    width:75%;
+    height: 350px;
+    margin-top: 30px;
+}
+.enterpass{
+    margin-top: -20px;
+}
+.maindiv{
+margin-top: 65px;
+}

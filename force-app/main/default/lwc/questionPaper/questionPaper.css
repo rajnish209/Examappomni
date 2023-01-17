@@ -1,0 +1,41 @@
+.header{
+    width:100%;
+    height: 90px;
+    background-color: rgb(57, 199, 189);
+}
+.headername{
+    
+    font-size: 385%;
+    
+    color:black;
+    font-weight: bold;
+}
+.logo{
+    margin-left: 10px;
+    margin-top:0px;
+    width: 230px;
+    height: 90px;
+}
+.main{
+    color: brown;
+    font-size: 50%; 
+    margin-top: 20px;
+}
+.headername{
+    margin-left: 40%;
+    margin-top:5px;
+}
+.inputfield{
+    width: 500px;
+}
+.inputbutton{
+    margin-left: 18px;
+    
+}
+.timer{
+    margin-top: -55px;
+}
+.checkbox{
+    width: 500px; 
+    margin-left: 20px;
+}
